@@ -1,0 +1,50 @@
+.skills img,
+.project img {
+   width: 100%;
+   max-width: 100px;
+}
+.skills,
+.projects {
+   max-width: 800px;
+   margin: auto;
+   /* background: var(--bg-primary); */
+   /* padding: 5px; */
+   /* margin: 5px; */
+}
+.skillCard,
+.projectCard {
+   display: flex;
+   flex-flow: row wrap;
+   align-items: center;
+   justify-content: center;
+}
+.skill,
+.project {
+   position: relative;
+   margin: 10px 8px;
+   border-radius: 10px;
+   padding: 10px;
+   box-shadow: 0 3px 2px 5px rgba(0, 0, 0, 0.2);
+   width: 150px;
+   height: 150px;
+   /* margin: 12px; */
+   flex: 0 1 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.skill h3 {
+   position: absolute;
+   bottom: 0;
+}
+/* media queries */
+@media screen and (min-width: 766px) {
+   .skill {
+      margin: 10px;
+      width: 220px;
+      height: 300px;
+   }
+   .skills img {
+      max-width: default;
+   }
+}

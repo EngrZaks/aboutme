@@ -1,0 +1,25 @@
+.details {
+   margin-bottom: 20px;
+}
+.details img {
+   max-height: 300px;
+   border-radius: 50%;
+}
+a {
+   text-decoration: none;
+   color: black;
+}
+.details a {
+   background: lime;
+   padding: 8px;
+   border-radius: 50%;
+   width: 10px;
+   height: 10px;
+}
+.details h3 {
+   font-family: var(--secondaryfont);
+   font-size: 1.5rem;
+}
+.details h1 {
+   font-family: var(--primaryFont);
+}
