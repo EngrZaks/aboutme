@@ -1,3 +1,5 @@
+import React, { useEffect } from "react";
+
 import "./skills.css";
 import cssLogo from "../../assets/css_logo.png";
 import htmlLogo from "../../assets/html_logo.png";
@@ -8,7 +10,7 @@ import nodeLogo from "../../assets/node.jpeg";
 import mongoLogo from "../../assets/mongo.png";
 import gitLogo from "../../assets/git.png";
 import pwaLogo from "../../assets/pwa.png";
-import { Section } from "../helpers";
+import { Section, trans } from "../helpers";
 
 const skills = [
    { skill: "HTML", url: htmlLogo },
@@ -22,6 +24,9 @@ const skills = [
    { skill: "Progressive Web Apps", url: pwaLogo },
 ];
 const Skills = () => {
+   useEffect(() => {
+      trans("skills");
+   });
    let skillList = skills.map(({ skill, url }) => (
       <div key={skill} className='skill'>
          <img alt={skill} src={url} />

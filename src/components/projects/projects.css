@@ -7,9 +7,8 @@
    margin: 10px 8px;
    border-radius: 10px;
    padding: 10px;
-   box-shadow: 0 3px 3px 5px rgba(0, 0, 0, 0.15);
    width: 220px;
-   height: 350px;
+   height: 340px;
    /* margin: 12px; */
    flex: 0 1 auto;
    display: flex;
@@ -18,4 +17,30 @@
 }
 .project img {
    zoom: 400%;
+}
+.project .content {
+   position: absolute;
+   bottom: 30px;
+}
+.project p {
+   margin: 0;
+}
+.project p:last-of-type {
+   margin-bottom: 5px;
+   font-weight: 400;
+}
+.project a {
+   margin: 10px;
+   /* color: lime; */
+   background: white;
+   border-radius: 50%;
+   padding: 5px;
+   /* margin-top: 10px; */
+}
+.project .title {
+   font-weight: 600;
+}
+.project .tech {
+   font-family: var(--secondaryfont);
+   font-weight: 500;
 }

@@ -3,3 +3,12 @@ export const Section = styled.div`
    width: 100%;
    /* display: flex; */
 `;
+export const Button = ({ text, onClick, style }) => (
+   <button className='button' style={style} onClick={onClick}>
+      {text}
+   </button>
+);
+
+export const trans = (el) => {
+   document.querySelector(`.${el}`).style.opacity = 1;
+};

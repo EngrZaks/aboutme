@@ -1,4 +1,6 @@
-import { Section } from "../helpers";
+import React, { useEffect } from "react";
+
+import { Section, trans } from "../helpers";
 import react30 from "../../assets/projects/30days.jpg";
 import avebot from "../../assets/projects/avebot.jpg";
 import hotcold from "../../assets/projects/hotcold.jpg";
@@ -12,6 +14,9 @@ import { AiOutlineGithub } from "react-icons/ai";
 import { BiGlobe } from "react-icons/bi";
 import "./projects.css";
 const Projects = () => {
+   useEffect(() => {
+      trans("projects");
+   });
    const projects = [
       {
          imgurl: js30,
@@ -31,7 +36,6 @@ const Projects = () => {
          giturl: "",
          liveurl: "https://lanoires.netlify.app/",
       },
-      { imgurl: avebot, name: "AveBot", giturl: "", liveurl: "" },
       {
          imgurl: speech,
          name: "Speech Detection web app",
@@ -62,6 +66,7 @@ const Projects = () => {
          giturl: "https://github.com/EngrZaks/30-Days-Of-React",
          liveurl: "",
       },
+      { imgurl: avebot, name: "AveBot", giturl: "", liveurl: "" },
    ];
    const projectsList = projects.map((project) => {
       let techs;
@@ -101,21 +106,23 @@ const Projects = () => {
       return (
          <div className='project' key={project.name}>
             <img src={project.imgurl} alt={project.imgurl} />
-            <p className='title'>{project.name}</p>
-            <p>
-               <b>Tech stack:</b> {techs}
-            </p>
-            <div className='links'>
-               {project.giturl && (
-                  <a href={project.giturl} target=''>
-                     <AiOutlineGithub />
-                  </a>
-               )}
-               {project.liveurl && (
-                  <a href={project.liveurl} target=''>
-                     <BiGlobe />
-                  </a>
-               )}
+            <div className='content'>
+               <p className='title'>{project.name}</p>
+               <p>
+                  <span className='tech'>Tech stack:</span> {techs}
+               </p>
+               <div className='links'>
+                  {project.giturl && (
+                     <a href={project.giturl} target=''>
+                        <AiOutlineGithub />
+                     </a>
+                  )}
+                  {project.liveurl && (
+                     <a href={project.liveurl} target=''>
+                        <BiGlobe />
+                     </a>
+                  )}
+               </div>
             </div>
          </div>
       );

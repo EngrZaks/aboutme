@@ -4,12 +4,15 @@
 .details img {
    max-height: 300px;
    border-radius: 50%;
+   box-shadow: 100px -40px 50px rgba(0, 255, 0, 0.4);
+   transition: all 1s ease-in-out;
+   transform: translateY(-170%) scale(3);
 }
 a {
    text-decoration: none;
-   color: black;
 }
 .details a {
+   color: black;
    background: lime;
    padding: 8px;
    border-radius: 50%;

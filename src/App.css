@@ -1,11 +1,13 @@
 .App {
    text-align: center;
+   transition: all 0.5s ease;
 }
 .nav {
-   background: rgb(235, 231, 231);
+   background: rgb(255, 255, 255);
+   /* background: rgba(44, 245, 44, 0.589); */
    padding: 1px;
    padding: 8px;
-   margin: 5px 0;
+   margin: 25px 0;
    transition: all 0.5s ease;
    position: sticky;
    top: 0;
@@ -14,20 +16,51 @@
 }
 
 .nav a {
-   padding: 8px;
+   padding: 15px 10px;
    margin: 0 1px;
    background: rgb(221, 220, 220);
+   /* background: lime; */
    transition: all 0.5s ease;
 }
 .active {
    /* color: lime; */
-   background: rgb(63, 25, 25);
    font-weight: bold;
    box-shadow: 0 2px 2px lime;
 }
 
+.heading {
+   text-transform: uppercase;
+   font-family: var(--primaryFont);
+   font-weight: bold;
+   text-shadow: 2px 2px 40px lime;
+}
+
+button {
+   height: 30px;
+   width: 30px;
+   position: fixed;
+   bottom: 100px;
+   right: 10px;
+   z-index: 2;
+   border-radius: 50%;
+   border: none;
+   box-shadow: 5px -40px 50px 5px rgba(255, 255, 255, 0.4);
+}
+
 @media screen and (min-width: 766px) {
+   .nav {
+      margin-top: 100px;
+      margin-bottom: 50px;
+   }
    .nav a {
       padding: 20px;
+   }
+   button {
+      height: 50px;
+      width: 50px;
+      bottom: 200px;
+      right: 50px;
+      box-shadow: 0px -80px 20px 5px rgba(255, 255, 255, 0.3),
+         5px -50px 50px -5px rgba(255, 255, 255, 0.4);
    }
 }

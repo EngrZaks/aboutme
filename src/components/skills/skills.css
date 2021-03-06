@@ -11,6 +11,7 @@
    /* padding: 5px; */
    /* margin: 5px; */
 }
+
 .skillCard,
 .projectCard {
    display: flex;
@@ -24,7 +25,7 @@
    margin: 10px 8px;
    border-radius: 10px;
    padding: 10px;
-   box-shadow: 0 3px 2px 5px rgba(0, 0, 0, 0.2);
+   box-shadow: 0 3px 3px 5px #e3e3e354;
    width: 150px;
    height: 150px;
    /* margin: 12px; */
@@ -41,8 +42,8 @@
 @media screen and (min-width: 766px) {
    .skill {
       margin: 10px;
-      width: 220px;
-      height: 300px;
+      width: 200px;
+      height: 250px;
    }
    .skills img {
       max-width: default;
