@@ -15,7 +15,7 @@ const Header = () => {
       <div className='details'>
          <img src={image} alt='myself' />
          <h1>Zakariyya Abdullahi</h1>
-         <h3 id='el'></h3>
+         <h3 id='el'> 💻</h3>
          <div className='contacts'>
             <a href='mailto:abzakariyya@gmail.com'>
                {" "}

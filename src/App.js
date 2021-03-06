@@ -11,8 +11,8 @@ function App() {
       const image = document.querySelector(".details img");
       const el = document.getElementById("el");
       console.log(el);
-      const string = "Full stack JavaScript Developer";
-      if (!el.textContent) {
+      const string = " Full stack JavaScript Developer";
+      if (el.textContent.trim().length < 3) {
          new Typing({
             element: el,
             text: string,
