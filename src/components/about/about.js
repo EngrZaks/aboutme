@@ -44,7 +44,7 @@ export default function About() {
                style={{
                   padding: "15px 5px",
                   color: "lime",
-                  margin: "20px 0",
+                  marginTop: "20px",
                   fontWeight: "bold",
                }}
                href='https://drive.google.com/file/d/136nhlywrYqm35i3btbFJ6BVm2pklZznY/view?usp=sharing'>
