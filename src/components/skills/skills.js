@@ -10,7 +10,7 @@ import nodeLogo from "../../assets/node.jpeg";
 import mongoLogo from "../../assets/mongo.png";
 import gitLogo from "../../assets/git.png";
 import pwaLogo from "../../assets/pwa.png";
-import { Section, trans } from "../helpers";
+import { Section, trans, scroll } from "../helpers";
 
 const skills = [
    { skill: "HTML", url: htmlLogo },
@@ -24,9 +24,11 @@ const skills = [
    { skill: "Progressive Web Apps", url: pwaLogo },
 ];
 const Skills = () => {
+   // useEffect(() => {});
    useEffect(() => {
       trans("skills");
-   });
+      scroll();
+   }, []);
    let skillList = skills.map(({ skill, url }) => (
       <div key={skill} className='skill'>
          <img alt={skill} src={url} />

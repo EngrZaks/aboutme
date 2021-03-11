@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-import { Section, trans } from "../helpers";
+import { Section, trans, scroll } from "../helpers";
 import react30 from "../../assets/projects/30days.jpg";
 import avebot from "../../assets/projects/avebot.jpg";
 import hotcold from "../../assets/projects/hotcold.jpg";
@@ -16,7 +16,8 @@ import "./projects.css";
 const Projects = () => {
    useEffect(() => {
       trans("projects");
-   });
+      scroll();
+   }, []);
    const projects = [
       {
          imgurl: js30,

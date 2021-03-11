@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
 
-import { trans } from "../helpers";
+import { trans, scroll } from "../helpers";
 export default function About() {
    useEffect(() => {
       trans("about");
-   });
+      scroll();
+   }, []);
    return (
       <div className='about'>
          <p className='heading'>About me</p>
