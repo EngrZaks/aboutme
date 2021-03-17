@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-import "./skills.css";
+import "./skills.scss";
 import cssLogo from "../../assets/css_logo.png";
 import htmlLogo from "../../assets/html_logo.png";
 import jamstack from "../../assets/Jamstack_logo.png";

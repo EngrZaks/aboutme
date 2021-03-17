@@ -33,7 +33,13 @@ function App() {
       background: "white",
       color: "black",
    };
-   const [theme, setTheme] = useState(dark);
+   const defaultTheme = () => {
+      let theme = dark;
+      let hour = new Date().getHours();
+      if (hour >= 8 && hour < 19) theme = white;
+      return theme;
+   };
+   const [theme, setTheme] = useState(defaultTheme());
    const changeTheme = (e) => {
       e.preventDefault();
       theme.background === "black" ? setTheme(white) : setTheme(dark);

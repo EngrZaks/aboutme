@@ -18,6 +18,11 @@ a {
    border-radius: 50%;
    width: 10px;
    height: 10px;
+   transition: all 0.3s ease-in;
+}
+.details a:hover{
+   background: rgb(1, 153, 1);
+   color: white;
 }
 .details h3 {
    font-family: var(--secondaryfont);
