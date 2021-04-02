@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
+import Zoom from "react-reveal/Zoom";
 
 import { Section, trans, scroll } from "../helpers";
 import react30 from "../../assets/projects/30days.jpg";
@@ -15,7 +16,7 @@ import { BiGlobe } from "react-icons/bi";
 import "./projects.css";
 const Projects = () => {
    useEffect(() => {
-      trans("projects");
+      trans("projects", 1);
       scroll();
    }, []);
    const projects = [
@@ -105,27 +106,29 @@ const Projects = () => {
             break;
       }
       return (
-         <div className='project' key={project.name}>
-            <img src={project.imgurl} alt={project.imgurl} />
-            <div className='content'>
-               <p className='title'>{project.name}</p>
-               <p>
-                  <span className='tech'>Tech stack:</span> {techs}
-               </p>
-               <div className='links'>
-                  {project.giturl && (
-                     <a href={project.giturl} target=''>
-                        <AiOutlineGithub />
-                     </a>
-                  )}
-                  {project.liveurl && (
-                     <a href={project.liveurl} target=''>
-                        <BiGlobe />
-                     </a>
-                  )}
+         <Zoom>
+            <div className='project' key={project.name}>
+               <img src={project.imgurl} alt={project.imgurl} />
+               <div className='content'>
+                  <p className='title'>{project.name}</p>
+                  <p>
+                     <span className='tech'>Tech stack:</span> {techs}
+                  </p>
+                  <div className='links'>
+                     {project.giturl && (
+                        <a href={project.giturl} target=''>
+                           <AiOutlineGithub />
+                        </a>
+                     )}
+                     {project.liveurl && (
+                        <a href={project.liveurl} target=''>
+                           <BiGlobe />
+                        </a>
+                     )}
+                  </div>
                </div>
             </div>
-         </div>
+         </Zoom>
       );
    });
    return (

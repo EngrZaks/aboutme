@@ -1,7 +1,9 @@
 import "./header.css";
 import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import Zoom from "react-reveal/Zoom";
 import {
    AiOutlineDownload,
+   AiOutlineGithub,
    AiOutlineMail,
    AiOutlinePhone,
    AiOutlineTwitter,
@@ -14,7 +16,9 @@ const Header = () => {
    return (
       <div className='details'>
          <img src={image} alt='myself' />
-         <h1>Zakariyya Abdullahi</h1>
+         <Zoom>
+            <h1>Zakariyya Abdullahi</h1>
+         </Zoom>
          <h3 id='el'> 💻</h3>
          <div className='contacts'>
             <a href='mailto:abzakariyya@gmail.com'>
@@ -33,13 +37,9 @@ const Header = () => {
                {" "}
                <FaLinkedinIn />
             </a>{" "}
-            <a href='https://www.facebook.com/AbZakariyya'>
+            <a href='https://github.com/EngrZaks'>
                {" "}
-               <FaFacebook />
-            </a>{" "}
-            <a href='https://www.instagram.com/engr.zaks'>
-               {" "}
-               <FaInstagram />
+               <AiOutlineGithub />
             </a>
             <a href='https://drive.google.com/file/d/136nhlywrYqm35i3btbFJ6BVm2pklZznY/view?usp=sharing'>
                {" "}

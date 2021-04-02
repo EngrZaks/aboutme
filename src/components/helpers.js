@@ -9,8 +9,10 @@ export const Button = ({ text, onClick, style }) => (
    </button>
 );
 
-export const trans = (el) => {
-   document.querySelector(`.${el}`).style.opacity = 1;
+export const trans = (el, n) => {
+   setTimeout(() => {
+      document.querySelector(`.${el}`).style.opacity = n;
+   }, 1);
 };
 export const scroll = () => {
    window.scroll({ top: 500, left: 0, behavior: "smooth" });

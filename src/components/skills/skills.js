@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-
+import { useEffect } from "react";
+import Zoom from "react-reveal/Zoom";
 import "./skills.scss";
 import cssLogo from "../../assets/css_logo.png";
 import htmlLogo from "../../assets/html_logo.png";
@@ -26,14 +26,16 @@ const skills = [
 const Skills = () => {
    // useEffect(() => {});
    useEffect(() => {
-      trans("skills");
+      trans("skills", 1);
       scroll();
    }, []);
    let skillList = skills.map(({ skill, url }) => (
-      <div key={skill} className='skill'>
-         <img alt={skill} src={url} />
-         <h3>{skill}</h3>
-      </div>
+      <Zoom>
+         <div key={skill} className='skill'>
+            <img alt={skill} src={url} />
+            <h3>{skill}</h3>
+         </div>
+      </Zoom>
    ));
    return (
       <Section className='skills'>
