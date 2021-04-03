@@ -1,5 +1,5 @@
 import "./header.css";
-import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 import Zoom from "react-reveal/Zoom";
 import {
    AiOutlineDownload,
