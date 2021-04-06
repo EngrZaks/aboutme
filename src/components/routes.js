@@ -2,10 +2,11 @@ import Skills from "./skills/skills";
 import Projects from "./projects/projects";
 import About from "./about/about";
 import {
-   BrowserRouter as Router,
+   // BrowserRouter as Router,
    Route,
    Switch,
    NavLink,
+   HashRouter,
 } from "react-router-dom";
 const Navigation = () => (
    <div className='nav'>
@@ -23,14 +24,14 @@ const Navigation = () => (
 
 const RouteContainer = () => {
    return (
-      <Router>
+      <HashRouter>
          <Navigation />
          <Switch>
             <Route path='/skills' component={Skills} />
             <Route path='/projects' component={Projects} />
             <Route path='/about' component={About} />
          </Switch>
-      </Router>
+      </HashRouter>
    );
 };
 export default RouteContainer;
