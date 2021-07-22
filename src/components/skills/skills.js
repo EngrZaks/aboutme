@@ -22,7 +22,7 @@ const skills = [
    { skill: "Git", url: gitLogo },
    { skill: "JAM Stack", url: jamstack },
    { skill: "Progressive Web Apps", url: pwaLogo },
-   { skill: "Data Analysis", url: "https://drive.google.com/file/d/15F1VVkIgB4k44mya7N1CKAcs9UDAkaVu/view?usp=sharing" },
+   { skill: "Data Analysis", url: "https://drive.google.com/thumbnail?id=15F1VVkIgB4k44mya7N1CKAcs9UDAkaVu" },
 ];
 const Skills = () => {
    // useEffect(() => {});
