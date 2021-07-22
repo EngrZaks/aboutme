@@ -53,7 +53,7 @@ export default function About() {
                      marginTop: "20px",
                      fontWeight: "bold",
                   }}
-                  href='https://drive.google.com/file/d/136nhlywrYqm35i3btbFJ6BVm2pklZznY/view?usp=sharing'>
+                  href='https://drive.google.com/file/d/1F4hBC_Vf96NlzNa2ej-FqpC_e_rbpJe_/view?usp=sharing'>
                   My Resume
                </a>
             </div>
