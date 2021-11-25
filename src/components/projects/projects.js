@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import Zoom from "react-reveal/Zoom";
 import { projects } from "./projectsArr";
 import { Section, trans, scroll } from "../helpers";
-
 import { AiOutlineGithub } from "react-icons/ai";
 import { BiGlobe } from "react-icons/bi";
 import "./projects.css";
@@ -11,7 +10,6 @@ const Projects = () => {
     trans("projects", 1);
     scroll();
   }, []);
-
   const projectsList = projects.map((project) => {
     return (
       <Zoom>

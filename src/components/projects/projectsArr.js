@@ -7,7 +7,15 @@ import node from "../../assets/projects/node.jpg";
 import speech from "../../assets/projects/speech.jpg";
 import tictac from "../../assets/projects/tic-tac.jpg";
 import ramash from "../../assets/projects/ramash.jpg";
+import finalYearProject from "../../assets/projects/finalYearProject.jpg";
 export const projects = [
+  {
+    imgurl: finalYearProject,
+    name: "My Final Year Project (a web app for physical properties of agricultural materials)",
+    giturl: "https://github.com/EngrZaks/properties",
+    liveurl: "https:properties-10227.web.app",
+    tech: "JavaScript, HTML, CSS",
+  },
   {
     imgurl: js30,
     name: "JavaScript30",
