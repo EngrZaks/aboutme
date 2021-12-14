@@ -7,7 +7,7 @@ import node from "../../assets/projects/node.jpg";
 import speech from "../../assets/projects/speech.jpg";
 import tictac from "../../assets/projects/tic-tac.jpg";
 import ramash from "../../assets/projects/ramash.jpg";
-import finalYearProject from "../../assets/projects/finalYearProject.jpg";
+import finalYearProject from "../../assets/projects/finalYearProject.png";
 export const projects = [
   {
     imgurl: finalYearProject,
