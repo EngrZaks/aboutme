@@ -14,7 +14,13 @@ const Skills = () => {
   let skillList = skills.map(({ skill, url }) => (
     <Zoom>
       <div key={skill} className="skill">
-        <img alt={skill} src={url} />
+        <image>
+          <img
+            alt={skill}
+            src={url}
+            style={{ backgroundColor: "white", borderRadius: 8 }}
+          />
+        </image>
         <h3>{skill}</h3>
       </div>
     </Zoom>

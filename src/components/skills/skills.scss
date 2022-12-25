@@ -1,62 +1,61 @@
 .skills img,
 .project img {
-   width: 100%;
-   max-width: 100px;
-   
+  width: 70%;
+  max-width: 120px;
 }
 .skills,
 .projects {
-   max-width: 800px;
-   margin: auto;
-   /* background: var(--bg-primary); */
-   /* padding: 5px; */
-   /* margin: 5px; */
+  max-width: 900px;
+  margin: auto;
+  /* background: var(--bg-primary); */
+  /* padding: 5px; */
+  /* margin: 5px; */
 }
 
 .skillCard,
 .projectCard {
-   display: flex;
-   flex-flow: row wrap;
-   align-items: center;
-   justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
 }
 .skill,
 .project {
-   position: relative;
-   margin: 10px 8px;
-   border-radius: 10px;
-   padding: 10px;
-   box-shadow: 0 3px 3px 5px #e3e3e354;
-   width: 150px;
-   height: 150px;
-   /* margin: 12px; */
-   flex: 0 1 auto;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   transition: all 0.5s ease-in;
+  position: relative;
+  margin: 10px 8px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 3px 3px 5px #e3e3e354;
+  width: 150px;
+  height: 150px;
+  /* margin: 12px; */
+  background-color: rgba(0, 0, 0, 0.429);
+  flex: 0 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s ease-in;
 }
 .skill:hover,
-.project:hover{
-   transform: translateY(-3%) scale(1.03);
-//   visibility: ;
-   img{
-      // zoom: 5;
-      // transform: scale(1.2);
-   }
+.project:hover {
+  transform: scale(1.03);
+  img {
+    transition: all 0.5s ease;
+    transform: scale(1.2);
+  }
 }
 .skill h3 {
-   position: absolute;
-   bottom: 0;
+  position: absolute;
+  bottom: 0;
 }
 /* media queries */
 @media screen and (min-width: 766px) {
-   .skill {
-      margin: 10px;
-      width: 200px;
-      height: 250px;
-   }
-   .skills img {
-      max-width: default;
-   }
+  //   .skill {
+  //     margin: 10px;
+  //     width: 200px;
+  //     height: 250px;
+  //   }
+  .skills img {
+    max-width: default;
+  }
 }
