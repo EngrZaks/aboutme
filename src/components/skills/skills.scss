@@ -1,26 +1,25 @@
-.skills img,
-.project img {
+.skills img {
   width: 70%;
   max-width: 120px;
 }
-.skills,
-.projects {
+.skills {
   max-width: 900px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   /* background: var(--bg-primary); */
   /* padding: 5px; */
   /* margin: 5px; */
 }
 
-.skillCard,
-.projectCard {
+.skillCard {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
 }
-.skill,
-.project {
+.skill {
   position: relative;
   margin: 10px 8px;
   border-radius: 10px;
@@ -33,20 +32,23 @@
   flex: 0 1 auto;
   display: flex;
   flex-direction: column;
+  //   justify-content: center;
+  text-align: center;
   align-items: center;
   transition: all 0.5s ease-in;
 }
-.skill:hover,
-.project:hover {
+.skill:hover {
   transform: scale(1.03);
-  img {
-    transition: all 0.5s ease;
-    transform: scale(1.2);
-  }
+  border-color: tomato;
+  //   img {
+  //     transition: all 0.5s ease;
+  //     transform: scale(1.2);
+  //   }
 }
 .skill h3 {
   position: absolute;
   bottom: 0;
+  font-size: 1rem;
 }
 /* media queries */
 @media screen and (min-width: 766px) {

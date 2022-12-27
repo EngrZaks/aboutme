@@ -1,31 +1,35 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
   transition: all 0.5s ease;
-  background-image: url("/src/assets/landing_page_with_colourful_cyber_particles_design_2805.png") !important;
+  background-image: url("/src/assets/landing_page_bg.png") !important;
   /* background-size: contain !important; */
-  background-attachment: fixed !important;
+  /* background-attachment: fixed !important; */
   /* background-repeat: no-repeat !important; */
   background-size: 100% !important;
 }
 .nav {
-  background: rgb(255, 255, 255);
-  /* background: rgba(44, 245, 44, 0.589); */
-  padding: 1px;
-  padding: 8px;
-  margin: 25px 0;
+  /* background: rgb(255, 255, 255); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(32, 0, 32);
+  /* padding: 1px; */
+  /* padding: 8px; */
+  margin-bottom: 25px;
   transition: all 0.5s ease;
   position: sticky;
   top: 0;
   z-index: 1;
   box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.253);
+  margin-top: 1.5rem;
 }
 
 .nav a {
   padding: 15px 10px;
-  margin: 0 1px;
-  background: rgb(221, 220, 220);
-  /* background: lime; */
+  margin: 0 3px;
+  background: rgba(221, 220, 220, 0.516);
   transition: all 0.5s ease;
+  text-decoration: none;
 }
 .nav a:hover {
   background: rgb(255, 255, 255);
@@ -57,13 +61,13 @@
 } */
 
 @media screen and (min-width: 766px) {
-  .nav {
+  /* .nav {
     margin-top: 100px;
     margin-bottom: 50px;
-  }
-  .nav a {
+  } */
+  /* .nav a {
     padding: 20px;
-  }
+  } */
   /* button {
     height: 50px;
     width: 50px;

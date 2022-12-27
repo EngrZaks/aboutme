@@ -4,23 +4,36 @@ import "./skills.scss";
 import { skills } from "./skillsData";
 
 import { Section, trans, scroll } from "../helpers";
+import { Box } from "@mui/material";
 
 const Skills = () => {
   // useEffect(() => {});
   useEffect(() => {
     trans("skills", 1);
-    scroll();
+    // scroll();
   }, []);
   let skillList = skills.map(({ skill, url }) => (
     <Zoom>
       <div key={skill} className="skill">
-        <image>
+        <Box sx={{ borderRadius: 20 }}>
           <img
             alt={skill}
             src={url}
-            style={{ backgroundColor: "white", borderRadius: 8 }}
+            style={{
+              backgroundColor: "white",
+              borderRadius: `${
+                skill.includes("SCSS") ||
+                skill.includes("Next") ||
+                skill.includes("Fast") ||
+                skill.includes("React") ||
+                skill.includes("Node") ||
+                skill.includes("Pyt")
+                  ? "50%"
+                  : ""
+              }`,
+            }}
           />
-        </image>
+        </Box>
         <h3>{skill}</h3>
       </div>
     </Zoom>
