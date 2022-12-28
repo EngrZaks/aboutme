@@ -4,8 +4,6 @@ import { projects } from "./projectsArr";
 import { Section, trans, scroll, modalStyle } from "../helpers";
 import { AiOutlineGithub } from "react-icons/ai";
 import { BiGlobe, BiInfoCircle } from "react-icons/bi";
-import { GrInfo } from "react-icons/gr";
-import { FiInfo } from "react-icons/fi";
 import "./projects.scss";
 import {
   Box,
@@ -14,7 +12,6 @@ import {
   CardActions,
   CardContent,
   CardMedia,
-  Container,
   IconButton,
   Modal,
   Typography,

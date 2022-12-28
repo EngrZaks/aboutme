@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Header from "./components/header/header";
 import RouteContainer from "./components/routes";
-import { Button } from "./components/helpers";
-import { MdBrightness6 } from "react-icons/md";
 import Typing from "../node_modules/typing-animate/typing";
 
 function App() {
@@ -39,7 +37,7 @@ function App() {
     // if (hour >= 8 && hour < 19) theme = white;
     return theme;
   };
-  const [theme, setTheme] = useState(defaultTheme());
+  const [theme] = useState(defaultTheme());
   //   const changeTheme = (e) => {
   //     e.preventDefault();
   //     theme.background === "black" ? setTheme(white) : setTheme(dark);

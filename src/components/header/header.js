@@ -2,6 +2,7 @@ import "./header.scss";
 import { FaLinkedinIn } from "react-icons/fa";
 import Zoom from "react-reveal/Zoom";
 import {
+  AiFillFileText,
   AiOutlineDownload,
   AiOutlineGithub,
   AiOutlineMail,
@@ -12,18 +13,6 @@ import image from "../../assets/zaks_crop.png";
 import { Box, Button, Typography } from "@mui/material";
 
 // import PropTypes from "prop-types";
-function download(file, text) {
-  //creating an invisible element
-  var element = document.createElement("a");
-  element.setAttribute(
-    "href",
-    "data:text/plain;charset=utf-8, " + encodeURIComponent(text)
-  );
-  element.setAttribute("download", file); // Above code is equivalent to // <a href="path of file" download="file name">
-  document.body.appendChild(element); //onClick property
-  element.click();
-  document.body.removeChild(element);
-}
 
 const Header = () => {
   return (
@@ -80,8 +69,9 @@ const Header = () => {
         fruition. And I am constantly learning
       </Typography>
       <Button
-        href="https://drive.google.com/uc?export=download&id=1JBQKCIkZyVoYHKhAe7OoCo-nYxqtsKZHsIUweSUJVKE"
+        href="https://docs.google.com/document/d/1KK_NPU1gaNuEipmkaBSOidHrX7n51mdW_j-ZigcumPA/edit?usp=share_link"
         variant="contained"
+        startIcon={<AiFillFileText />}
         size="large"
         sx={{
           mt: 1,
@@ -89,7 +79,7 @@ const Header = () => {
           borderRadius: 10,
         }}
       >
-        Download CV
+        Open CV
       </Button>
     </Box>
     //  {/* </div> */}

@@ -3,6 +3,7 @@ import Zoom from "react-reveal/Zoom";
 import "./skills.scss";
 import { skills } from "./skillsData";
 
+// eslint-disable-next-line no-unused-vars
 import { Section, trans, scroll } from "../helpers";
 import { Box } from "@mui/material";
 
