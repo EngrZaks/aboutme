@@ -10,10 +10,20 @@ import {
 } from "react-icons/ai";
 import image from "../../assets/zaks_crop.png";
 import { Box, Button, Typography } from "@mui/material";
-import { BiBorderRadius } from "react-icons/bi";
-import { textAlign } from "@mui/system";
 
 // import PropTypes from "prop-types";
+function download(file, text) {
+  //creating an invisible element
+  var element = document.createElement("a");
+  element.setAttribute(
+    "href",
+    "data:text/plain;charset=utf-8, " + encodeURIComponent(text)
+  );
+  element.setAttribute("download", file); // Above code is equivalent to // <a href="path of file" download="file name">
+  document.body.appendChild(element); //onClick property
+  element.click();
+  document.body.removeChild(element);
+}
 
 const Header = () => {
   return (
@@ -40,7 +50,7 @@ const Header = () => {
           {" "}
           <AiOutlineGithub />
         </a>
-        <a href="https://drive.google.com/file/d/1J1Qb86-dJsJOCW7R5JtfiiqyMd5z_BUn/view?usp=sharing">
+        <a href="https://docs.google.com/document/d/1JBQKCIkZyVoYHKhAe7OoCo-nYxqtsKZHsIUweSUJVKE/edit?usp=share_link">
           {" "}
           <AiOutlineDownload />
         </a>
@@ -70,6 +80,7 @@ const Header = () => {
         fruition. And I am constantly learning
       </Typography>
       <Button
+        href="https://drive.google.com/uc?export=download&id=1JBQKCIkZyVoYHKhAe7OoCo-nYxqtsKZHsIUweSUJVKE"
         variant="contained"
         size="large"
         sx={{
