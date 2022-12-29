@@ -2,7 +2,8 @@ import "./header.scss";
 import { FaLinkedinIn } from "react-icons/fa";
 import Zoom from "react-reveal/Zoom";
 import {
-  AiFillFileText,
+  AiFillFilePdf,
+  // AiFillFileText,
   AiOutlineDownload,
   AiOutlineGithub,
   AiOutlineMail,
@@ -10,7 +11,9 @@ import {
   AiOutlineTwitter,
 } from "react-icons/ai";
 import image from "../../assets/zaks_crop.png";
-import { Box, Button, Typography } from "@mui/material";
+import scrolldown from "../../assets/movedown.png";
+import { Box, Button,  Typography } from "@mui/material";
+import { scroll } from "../helpers";
 
 // import PropTypes from "prop-types";
 
@@ -43,10 +46,20 @@ const Header = () => {
           {" "}
           <AiOutlineDownload />
         </a>
+        {/* <Button color="primary" variant="contained"> */}{" "}
+        <Box className="scrolldown" onClick={() => scroll()}>
+          <img
+            src={scrolldown}
+            alt="scroll down button"
+            width={20}
+            height={30}
+          />
+        </Box>
+        {/* </Button> */}
       </Box>
-      <Box className="image">
+      <div className="image">
         <img src={image} alt="myself" />
-      </Box>
+      </div>
       <Zoom>
         <Typography variant="h4" component="h1">
           Zakariyya Abdullahi
@@ -60,6 +73,7 @@ const Header = () => {
           textAlign: "center",
           backgroundColor: "black",
           color: "#ffffffd4",
+          maxWidth: 380,
         }}
       >
         Whether it's planning and designing the architecture, converting Figma
@@ -69,9 +83,10 @@ const Header = () => {
         fruition. And I am constantly learning
       </Typography>
       <Button
-        href="https://docs.google.com/document/d/1KK_NPU1gaNuEipmkaBSOidHrX7n51mdW_j-ZigcumPA/edit?usp=share_link"
+        className="cv"
+        href="https://drive.google.com/file/d/1ZXKTGZDAD8v95ZV6ChMDEOwZuk66jgmt/view?usp=sharing"
         variant="contained"
-        startIcon={<AiFillFileText />}
+        startIcon={<AiFillFilePdf />}
         size="large"
         sx={{
           mt: 1,

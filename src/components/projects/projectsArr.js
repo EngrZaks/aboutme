@@ -1,5 +1,4 @@
 import hotcold from "../../assets/projects/hotcold.jpg";
-import speech from "../../assets/projects/speech.jpg";
 import tictac from "../../assets/projects/tic-tac.jpg";
 import ramash from "../../assets/projects/ramash.jpg";
 import byamis from "../../assets/projects/byamis.png";
@@ -51,13 +50,13 @@ export const projects = [
   //   liveurl: "https://lanoires.netlify.app/",
   //   tech: "React",
   // },
-  {
-    imgurl: speech,
-    name: "Speech Detection",
-    giturl: "https://github.com/EngrZaks/SpeechRecorgnition",
-    liveurl: "https://speechit.netlify.app/",
-    tech: "JavaScript, HTML, CSS",
-  },
+  // {
+  //   imgurl: speech,
+  //   name: "Speech Detection",
+  //   giturl: "https://github.com/EngrZaks/SpeechRecorgnition",
+  //   liveurl: "https://speechit.netlify.app/",
+  //   tech: "JavaScript, HTML, CSS",
+  // },
   {
     imgurl: tictac,
     name: "tic-tac-toe",

@@ -38,6 +38,9 @@
       background: rgb(116, 3, 116);
       color: black;
     }
+    .scrolldown {
+      display: none;
+    }
   }
   h2 {
     font-family: var(--secondaryfont);
@@ -56,15 +59,34 @@
     //  align-items: flex-end;
     margin-left: auto;
     text-align: center;
+    .cv {
+      margin: 1.2rem;
+    }
     .contacts {
       flex-direction: column;
       position: absolute;
-      top: 0;
-      left: -20%;
-      width: auto;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -40%;
+      width: fit-content;
       border-bottom: none;
-      border-right: 2px solid rgb(56, 1, 56);
-      height: 110%;
+      // border-right: 2px solid rgb(56, 1, 56);
+      // border: 1px solid;
+      background-color: linear-gradient(180deg, white, blue);
+      border-radius: 15px;
+      height: 70%;
+      .scrolldown {
+        display: block;
+        background-color: #e3e3e3;
+        padding: 5px;
+        border-radius: 25%;
+        margin-top: auto;
+        transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      }
+      .scrolldown:hover {
+        background-color: white;
+        transform: translateY(15px);
+      }
     }
   }
 }

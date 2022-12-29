@@ -7,7 +7,6 @@ import { BiGlobe, BiInfoCircle } from "react-icons/bi";
 import "./projects.scss";
 import {
   Box,
-  Button,
   Card,
   CardActions,
   CardContent,
@@ -17,12 +16,12 @@ import {
   Typography,
 } from "@mui/material";
 const Projects = () => {
-  const [open, setOpen] = react.useState(false);
-  const handleOpen = (e) => {
+  const [open, setOpen] = react.useState(null);
+  const handleOpen = (e, id) => {
     e.preventDefault();
-    setOpen(true);
+    setOpen(id);
   };
-  const handleClose = () => setOpen(false);
+  const handleClose = (id) => setOpen(null);
   react.useEffect(() => {
     trans("projects", 1);
     scroll();
@@ -61,7 +60,7 @@ const Projects = () => {
             )}
 
             {project.info && (
-              <a href="none" onClick={handleOpen}>
+              <a href="none" onClick={(e) => handleOpen(e, project.name)}>
                 <IconButton color="primary" sx={{}}>
                   <BiInfoCircle />
                   {/* <Button>info</Button> */}
@@ -70,8 +69,7 @@ const Projects = () => {
             )}
           </CardActions>
           <Modal
-            hideBackdrop
-            open={open}
+            open={open === project.name}
             onClose={handleClose}
             aria-labelledby="modal-modal-title"
             aria-describedby="modal-modal-description"
@@ -81,12 +79,8 @@ const Projects = () => {
                 {project.name}
               </Typography>
               <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
                 {project.info}
               </Typography>
-              <Button color="error" onClick={handleClose} sx={{ mt: 2 }}>
-                close
-              </Button>
             </Box>
           </Modal>
         </Card>

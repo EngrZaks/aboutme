@@ -24,11 +24,11 @@
   margin: 10px 8px;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 0 3px 3px 5px #e3e3e354;
-  width: 150px;
-  height: 150px;
+  // box-shadow: 0 3px 3px 5px #e3e3e354;
+  width: 130px;
+  height: 130px;
   /* margin: 12px; */
-  background-color: rgba(0, 0, 0, 0.429);
+  // background-color: rgba(0, 0, 0, 0.4);
   flex: 0 1 auto;
   display: flex;
   flex-direction: column;
@@ -49,6 +49,9 @@
   position: absolute;
   bottom: 0;
   font-size: 1rem;
+  background-color: black;
+  padding: 3px;
+  // margin-top: 19px !important;
 }
 /* media queries */
 @media screen and (min-width: 766px) {
