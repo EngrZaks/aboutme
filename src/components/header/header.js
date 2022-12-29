@@ -4,7 +4,7 @@ import Zoom from "react-reveal/Zoom";
 import {
   AiFillFilePdf,
   // AiFillFileText,
-  AiOutlineDownload,
+  // AiOutlineDownload,
   AiOutlineGithub,
   AiOutlineMail,
   AiOutlinePhone,
@@ -12,7 +12,7 @@ import {
 } from "react-icons/ai";
 import image from "../../assets/zaks_crop.png";
 import scrolldown from "../../assets/movedown.png";
-import { Box, Button,  Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import { scroll } from "../helpers";
 
 // import PropTypes from "prop-types";
@@ -42,10 +42,10 @@ const Header = () => {
           {" "}
           <AiOutlineGithub />
         </a>
-        <a href="https://docs.google.com/document/d/1JBQKCIkZyVoYHKhAe7OoCo-nYxqtsKZHsIUweSUJVKE/edit?usp=share_link">
+        {/* <a href="https://docs.google.com/document/d/1JBQKCIkZyVoYHKhAe7OoCo-nYxqtsKZHsIUweSUJVKE/edit?usp=share_link">
           {" "}
           <AiOutlineDownload />
-        </a>
+        </a> */}
         {/* <Button color="primary" variant="contained"> */}{" "}
         <Box className="scrolldown" onClick={() => scroll()}>
           <img
