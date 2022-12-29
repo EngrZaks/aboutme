@@ -30,7 +30,7 @@ const Header = () => {
           {" "}
           <AiOutlinePhone />
         </a>{" "}
-        <a href="https://twitter.com/DevZaks">
+        <a href="https://twitter.com/Engr_Zaks">
           {" "}
           <AiOutlineTwitter />
         </a>{" "}
