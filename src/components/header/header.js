@@ -84,7 +84,7 @@ const Header = () => {
       </Typography>
       <Button
         className="cv"
-        href="https://drive.google.com/file/d/1ZXKTGZDAD8v95ZV6ChMDEOwZuk66jgmt/view?usp=sharing"
+        href="https://drive.google.com/file/d/1wLUHgk3QC8sgboo3fwuIsA1nmUeLD6lB/view?usp=sharing"
         variant="contained"
         startIcon={<AiFillFilePdf />}
         size="large"
