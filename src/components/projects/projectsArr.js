@@ -24,7 +24,7 @@ export const projects = [
     imgurl: finalYearProject,
     name: "Agro Products",
     giturl: "https://github.com/EngrZaks/properties",
-    liveurl: "https:properties-10227.web.app",
+    liveurl: "https://properties-10227.web.app",
     tech: "JavaScript, HTML, CSS",
     info: "This is my school project. It's a web application that shows physical properties of different agricultural products.",
   },
