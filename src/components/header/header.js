@@ -80,11 +80,11 @@ const Header = () => {
         designs into intuitive front-end interfaces, writing business logic on
         the back-end, or setting up robust cloud deployments, I truly enjoy the
         process of bringing an idea to life and seeing the end result come to
-        fruition. And I am constantly learning
+        fruition. And I am constantly learning.
       </Typography>
       <Button
         className="cv"
-        href="https://drive.google.com/file/d/1wLUHgk3QC8sgboo3fwuIsA1nmUeLD6lB/view?usp=sharing"
+        href="https://drive.google.com/file/d/1YCvfbtufmVJJvVy5jMy3_5FNKK0OX1HI/view?usp=share_link"
         variant="contained"
         startIcon={<AiFillFilePdf />}
         size="large"
