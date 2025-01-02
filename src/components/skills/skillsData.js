@@ -14,11 +14,13 @@ import sql from "../../assets/Sql_data_base_with_logo.png";
 import firebase from "../../assets/firebase_logo_icon_171157(1).png";
 import gcloud from "../../assets/google_cloud_logo_icon_171058.png";
 import data from "../../assets/data.jpg";
+import tailwind from "../../assets/tailwind.png";
 import sass from "../../assets/Sass Logo - Seal (Color).png";
 
 export const skills = [
   { skill: "HTML", url: htmlLogo },
   { skill: "CSS", url: cssLogo },
+  { skill: "Tailwind", url: tailwind },
   { skill: "SCSS", url: sass },
   { skill: "JavaScript", url: jslogo },
   { skill: "TypeScript", url: ts },
