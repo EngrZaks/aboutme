@@ -12,7 +12,7 @@ import {
 } from "react-icons/ai";
 import image from "../../assets/zaks_crop.png";
 import scrolldown from "../../assets/movedown.png";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Link, Typography } from "@mui/material";
 import { scroll } from "../helpers";
 
 // import PropTypes from "prop-types";
@@ -21,7 +21,7 @@ const Header = () => {
   return (
     //  <div className="details-wrapper">
     <Box className="details">
-      <Box className="contacts">
+      <Box className="contacts" sx={{ bgcolor: "black", height: 100 }}>
         <a href="mailto:abzakariyya@gmail.com">
           {" "}
           <AiOutlineMail />
@@ -65,15 +65,49 @@ const Header = () => {
           Zakariyya Abdullahi
         </Typography>
       </Zoom>
-      <h2 id="el"> 💻</h2>
+      {/* <h2 id="el"> 💻</h2> */}
+
       <Typography
-        variant="caption"
+        align="center"
+        sx={{
+          fontStyle: "italic",
+          fontWeight: "bold",
+          color: "gray",
+          fontSize: 18,
+          px: 2,
+          bgcolor: "rgba(0, 0, 0, 0.7)",
+        }}
+      >
+        Software engineer @{" "}
+        <a
+          pashref
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.snappieanalytics.com/"
+        >
+          <Link sx={{ color: "palegoldenrod" }}>Snappie Analytics Ltd </Link>
+        </a>{" "}
+        <span style={{ fontStyle: "normal" }}>|</span> Technical Product
+        Manager/Front-end Lead @{" "}
+        <a
+          pashref
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.orbitalsai.com/"
+        >
+          <Link sx={{ color: "palegoldenrod" }}>OrbitalsAI Nigeria Ltd </Link>
+        </a>{" "}
+        <span style={{ fontStyle: "normal" }}>|</span> Freelancer
+      </Typography>
+      <Typography
+        variant="body1"
         sx={{
           p: 2,
-          textAlign: "center",
-          backgroundColor: "black",
+          // textAlign: "center",
+          backgroundColor: "rgba(0, 0, 0, 0.586)",
           color: "#ffffffd4",
-          maxWidth: 380,
+          maxWidth: 700,
+          textAlign: { xs: "center", md: "left" },
         }}
       >
         Whether it's planning and designing the architecture, converting Figma
@@ -92,6 +126,7 @@ const Header = () => {
           mt: 1,
           fontWeight: "bold",
           borderRadius: 10,
+          bgcolor: "gray",
         }}
       >
         Open CV
