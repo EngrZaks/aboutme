@@ -2,22 +2,22 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Header from "./components/header/header";
 import RouteContainer from "./components/routes";
-import Typing from "../node_modules/typing-animate/typing";
+// import Typing from "../node_modules/typing-animate/typing";
 
 function App() {
   useEffect(() => {
     const image = document.querySelector(".details .image");
     const el = document.getElementById("el");
     console.log(el);
-    const string = " Full stack Developer";
-    if (el.textContent.trim().length < 3) {
-      new Typing({
-        element: el,
-        text: string,
-        // hideClass: el,
-        typingDelay: 200,
-      }).run();
-    }
+    // const string = " Full stack Developer";
+    // if (el.textContent.trim().length < 3) {
+    //   new Typing({
+    //     element: el,
+    //     text: string,
+    //     // hideClass: el,
+    //     typingDelay: 200,
+    //   }).run();
+    // }
     setTimeout(() => {
       image.style.transform = "translateY(0) scale(1)";
     }, 200);
